@@ -1,0 +1,76 @@
+            @media screen and (max-width: 600px)
+            {
+                .Template
+                {
+                    background-image:none;
+                    background: #D89330;
+                    text-align: center;
+                }
+
+            }
+            @media only screen and (min-width: 601px) {
+                .Template
+                 {
+                     background-size: 100%;
+                     background-image: url("../Backgrounds/BG9.jpg");
+                     max-width: fit-content;
+                     height: fit-content;
+                     background-attachment: fixed;
+                     text-align: center;
+                 }
+
+            }
+
+
+             #aboutme
+            {
+                background: url("../Backgrounds/MINIM.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-attachment: scroll;
+                text-align: center;
+            }
+            .Mypic
+            {
+                height:100%; width: 80%; padding: 8%; margin-left: 8%;
+            }
+             #data
+            {
+                background-color:#333;;
+                color:floralwhite;
+                font-family: monospace;
+                margin-top: 5vw;
+                 text-align: center;
+             }
+             #fb
+            {
+                height: 40px;
+                width: 40px;
+                float:right;
+                margin-right: 1vw;
+                margin-top: 15vw;
+                margin-bottom: 3vw;
+            }
+            .no-js #loader { display: none;  }
+            .js #loader
+            {
+                display: block; position: absolute; left: 100px; top: 0;
+            }
+            .se-pre-con
+            {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
+                background-color: mediumturquoise;
+            }
+            #Quote
+            {
+                font-size:5vw;
+                font-family:Tertre,serif;
+                color:floralwhite;
+                text-align: center;
+            }
