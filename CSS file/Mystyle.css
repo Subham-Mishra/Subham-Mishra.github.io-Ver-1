@@ -1,76 +1,189 @@
-            @media screen and (max-width: 600px)
-            {
-                .Template
-                {
-                    background-image:none;
-                    background: #D89330;
-                    text-align: center;
-                }
+            html {
+            	overflow-x: hidden;
+            }
+            .row {
+            	display: -ms-flexbox;
+            	/* IE10 */
+            	display: flex;
+            	-ms-flex-wrap: wrap;
+            	/* IE10 */
+            	flex-wrap: wrap;
+            	padding: 0 4px;
+            	flex-direction: row;
+            }
+            /* Create four equal columns that sits next to each other */
 
+            .column {
+            	-ms-flex: 25%;
+            	/* IE10 */
+            	flex: 25%;
+            	max-width: 25%;
+            	padding: 0 4px;
+            	flex-direction: column;
+            }
+            .column img {
+            	margin-top: 8px;
+            	vertical-align: top;
+            }
+            /* Responsive layout - makes a two column-layout instead of four columns */
+
+            @media screen and (max-width: 800px) {
+            	.column {
+            		-ms-flex: 50%;
+            		flex: 50%;
+            		max-width: 50%;
+            	}
+            }
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+            @media screen and (max-width: 600px) {
+            	.column {
+            		-ms-flex: 100%;
+            		flex: 100%;
+            		max-width: 100%;
+            	}
+            }
+            .mySlides {
+            	display: none;
+            }
+            .slideshow-container {
+            	max-width: 1000px;
+            	position: relative;
+            	margin: auto;
+            }
+            /* Caption text */
+
+            .text {
+            	color: #f2f2f2;
+            	font-size: 15px;
+            	padding: 8px 12px;
+            	position: absolute;
+            	bottom: 8px;
+            	width: 100%;
+            	text-align: center;
+            }
+            /* Number text (1/3 etc) */
+
+            .numbertext {
+            	color: #f2f2f2;
+            	font-size: 12px;
+            	padding: 8px 12px;
+            	position: absolute;
+            	top: 0;
+            }
+            /* The dots/bullets/indicators */
+
+            .dot {
+            	height: 15px;
+            	width: 15px;
+            	margin: 0 2px;
+            	background-color: #bbb;
+            	border-radius: 50%;
+            	display: inline-block;
+            	transition: background-color 0.6s ease;
+            }
+            .active {
+            	background-color: #717171;
+            }
+            /* Fading animation */
+
+            .fade {
+            	-webkit-animation: fade;
+            	-webkit-animation-duration: 4s;
+            	animation-name: fade;
+            	animation-duration: 4s;
+            }
+            @-webkit-keyframes fade {
+            	from {
+            		opacity: .4
+            	}
+            	to {
+            		opacity: 1
+            	}
+            }
+            @keyframes fade {
+            	from {
+            		opacity: .4
+            	}
+            	to {
+            		opacity: 1
+            	}
+            }
+            /* On smaller screens, decrease text size */
+
+            @media only screen and (max-width: 300px) {
+            	.text {
+            		font-size: 11px
+            	}
+            }
+            @media screen and (max-width: 600px) {
+            	.Template {
+            		background-image: none;
+            		background: #006666;
+            		text-align: center;
+            	}
             }
             @media only screen and (min-width: 601px) {
-                .Template
-                 {
-                     background-size: 100%;
-                     background-image: url("../Backgrounds/BG9.jpg");
-                     max-width: fit-content;
-                     height: fit-content;
-                     background-attachment: fixed;
-                     text-align: center;
-                 }
-
+            	.Template {
+            		background-size: 100%;
+            		background-image: url("../Backgrounds/BG9.jpg");
+            		max-width: fit-content;
+            		height: fit-content;
+            		background-attachment: fixed;
+            		text-align: center;
+            	}
             }
-
-
-             #aboutme
-            {
-                background: url("../Backgrounds/MINIM.jpg") no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background-attachment: scroll;
-                text-align: center;
+            #aboutme {
+            	background: url("../Backgrounds/MINIM.jpg") no-repeat center center fixed;
+            	-webkit-background-size: cover;
+            	-moz-background-size: cover;
+            	-o-background-size: cover;
+            	background-size: cover;
+            	background-attachment: scroll;
+            	text-align: center;
             }
-            .Mypic
-            {
-                height:100%; width: 80%; padding: 8%; margin-left: 8%;
+            .Mypic {
+            	height: 80%;
+            	width: 80%;
+            	padding: 5%;
+            	margin-left: 2vw;
+                margin-bottom: 3%;
             }
-             #data
-            {
-                background-color:#333;;
-                color:floralwhite;
-                font-family: monospace;
-                margin-top: 5vw;
-                 text-align: center;
-             }
-             #fb
-            {
-                height: 40px;
-                width: 40px;
-                float:right;
-                margin-right: 1vw;
-                margin-top: 15vw;
-                margin-bottom: 3vw;
+            #data {
+            	background-color: #333;
+            	color: floralwhite;
+            	font-family: monospace;
+            	margin-top: 4vw;
+            	text-align: center;
             }
-            .no-js #loader { display: none;  }
-            .js #loader
-            {
-                display: block; position: absolute; left: 100px; top: 0;
+            #fb {
+            	height: 40px;
+            	width: 40px;
+            	float: right;
+            	margin-right: 1vw;
+            	margin-top: 15vw;
+            	margin-bottom: 3vw;
             }
-            .se-pre-con
-            {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                z-index: 9999;
-                background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
-                background-color: mediumturquoise;
+            .no-js #loader {
+            	display: none;
             }
-            #Quote
-            {
-                font-size:5vw;
-                font-family:Tertre,serif;
-                color:floralwhite;
-                text-align: center;
+            .js #loader {
+            	display: block;
+            	position: absolute;
+            	left: 100px;
+            	top: 0;
+            }
+            .se-pre-con {
+            	position: fixed;
+            	width: 100%;
+            	height: 100%;
+            	z-index: 9999;
+            	background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
+            	background-color: mediumturquoise;
+            }
+            #Quote {
+            	font-size: 5vw;
+            	font-family: Tertre, serif;
+            	color: floralwhite;
+            	text-align: center;
             }

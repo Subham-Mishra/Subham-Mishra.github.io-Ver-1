@@ -1,126 +1,86 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta charset="UTF-8">
 	<link href="CSS%20file/Mystyle.css" rel="stylesheet" type="text/css">
 	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" name="viewport">
 	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta content="true" name="HandheldFriendly">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="HTML%20files/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script>
-	              $(window).on('load', function() {
-	              $(".se-pre-con").fadeOut("slow");
-	              });
-	              function myFunction() {
-	                    alert("You need to be logged into your fb account before clicking this button to connect with me!!");
-	              }
-	</script>
+	                 $(window).on('load', function() {
+	                 $(".se-pre-con").fadeOut("slow");
+	                 });
+	                 function myFunction() {
+	                       alert("You need to be logged into your fb account before clicking this button to connect with me!!");
+	                 }
 
+	</script>
 	<title>MARIANS</title>
 </head>
-
-<body>
-	<div class="se-pre-con">
+<body style=" background-color: #990033;font-family: Verdana, sans-serif;">
+	<div class="se-pre-con"></div>
+	<div>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button> <a class="navbar-brand" href="#" style="background-color: darkslategray;color: cyan;">MARIANS</a>
+			</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="#aboutme">ABOUT ME</a>
+						</li>
+						<li class="dropdown">
+							<a  href="#">MY BLOG</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROJECTS<span class=
+							"caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="HTML%20files/Tribute.html" target="_blank">Tribute Page</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PHOTO GALLERY<span class=
+							"caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="HTML%20files/Mypics.html">My Pics</a>
+								</li>
+								<li>
+									<a href="HTML%20files/familypics.html">Family Pics</a>
+								</li>
+								<li>
+									<a href="HTML%20files/School.html">St. Mary's</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+						</li>
+						<li>
+							<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
-
-
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type=
-				"button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class=
-				"icon-bar"></span></button> <a class="navbar-brand" href="#" style=
-				"background-color: darkslategray;color: cyan;">MARIANS</a>
-			</div>
-
-
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a>
-					</li>
-
-
-					<li><a href="#aboutme">About Me</a>
-					</li>
-
-
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY BLOG<span class=
-						"caret"></span></a>
-
-						<ul class="dropdown-menu">
-							<li><a href="#">Page 1-1</a>
-							</li>
-
-
-							<li><a href="#">Page 1-2</a>
-							</li>
-
-
-							<li><a href="#">Page 1-3</a>
-							</li>
-						</ul>
-					</li>
-
-
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROJECTS<span class=
-						"caret"></span></a>
-
-						<ul class="dropdown-menu">
-							<li><a href="HTML%20files/Tribute.html">Tribute Page</a>
-							</li>
-
-
-							<li><a href="#">Page 2-2</a>
-							</li>
-
-
-							<li><a href="#">Page 3-3</a>
-							</li>
-						</ul>
-					</li>
-
-
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">PHOTO GALLERY<span class=
-						"caret"></span></a>
-
-						<ul class="dropdown-menu">
-							<li><a href="HTML%20files/Mypics.html">My Pics</a>
-							</li>
-
-
-							<li><a href="HTML%20files/familypics.html">Family Pics</a>
-							</li>
-
-
-							<li><a href="HTML%20files/School.html">St. Mary's</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-					</li>
-
-
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-
-	<div class="container-fluid">
+	<div class="container-fluid" style="width: 100%;">
 		<div class="Template">
 			<br>
 			<br>
@@ -149,11 +109,9 @@
 			<br>
 			<br>
 			<br>
-
-
 			<h1 style=
 			"border: 3px solid #032232;border-radius:20px;background:#f1083e;text-align:center;padding:25px;width:100%;color:white;">
-			WELCOME, MY DEAR FRIENDS!!!</h1>
+			WELCOME, MY DEAR FRIENDS!!!</h1><br>
 			<br>
 			<br>
 			<br>
@@ -163,42 +121,74 @@
 			<br>
 			<br>
 			<br>
-			<br>
+		</div><br>
+		<br>
+		<div class="slideshow-container" style="width:cover;">
+			<div class="mySlides fade">
+			<div class="numbertext">
+				1 / 5
+			</div><img src="Backgrounds/C1.png" style="width:100%"></div>
+			<div class="mySlides fade">
+			<div class="numbertext">
+				2 / 5
+			</div><img src="Backgrounds/C2.jpg" style="width:100%"></div>
+			<div class="mySlides fade">
+			<div class="numbertext">
+				3 / 5
+			</div><img src="Backgrounds/C3.jpg" style="width:100%"></div>
+			<div class="mySlides fade">
+			<div class="numbertext">
+				4 / 5
+			</div><img src="Backgrounds/C4.jpg" style="width:100%"></div>
+			<div class="mySlides fade">
+			<div class="numbertext">
+				5 / 5
+			</div><img src="Backgrounds/C5.jpg" style="width:100%"></div>
+		</div><br>
+		<div style="text-align:center">
+			<span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class=
+			"dot"></span> <span class="dot"></span>
 		</div>
+		<script>
+		      var slideIndex = 0;
+		      showSlides();
 
-
+		      function showSlides()
+		      {
+		          var i;
+		          var slides = document.getElementsByClassName("mySlides");
+		          var dots = document.getElementsByClassName("dot");
+		          for (i = 0; i < slides.length; i++) {
+		             slides[i].style.display = "none";
+		          }
+		          slideIndex++;
+		          if (slideIndex > slides.length) {slideIndex = 1}
+		          for (i = 0; i < dots.length; i++) {
+		              dots[i].className = dots[i].className.replace(" active", "");
+		          }
+		          slides[slideIndex-1].style.display = "block";
+		          dots[slideIndex-1].className += " active";
+		          setTimeout(showSlides, 4000);
+		      }
+		</script>
 		<div id="aboutme">
 			<br>
 			<br>
 			<br>
 			<br>
 			<br>
-			<br>
-
-
 			<div>
 				<h1>ABOUT ME...</h1>
-
-
 				<div style="width:100%">
 					<span style="font-size:100px">❝</span><br>
-
-
 					<p style="margin-top:-60px"><i><b>I am a 1st year Btech graduate from College of Engineering
 					and Technology,Bhubaneshwar. I belong to CSE background and i am extremely passionate about
 					coding ever since i learned programming. I pursued my +2 from DAV Cspur and my 10th from St.
 					Mary's school. This Website is one of my first major Projects done in the arena Web
 					Development. Since it has been designed while i was just a learner so i hope you will like it.
 					If you faced any problem browsing my website kindly ping me. I am open to any suggestions made
-					for the improvement of this website...THANK YOU!!!</b></i>
-					</p>
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+					for the improvement of this website...THANK YOU!!!</b></i></p>
+				</div><br>
 				<br>
 				<br>
 				<br>
@@ -208,28 +198,24 @@
 				<br>
 			</div>
 		</div>
-
-
+		<br>
+		<br>
 		<div class="row" style="background-color:#333;background-attachment: fixed;">
 			<div class="col-md-4"><br>
-			<img alt="Pic of the Creator" class="Mypic img-fluid" src="Images/Mypic.jpg">
-			</div>
-
-
+			<img alt="Pic of the Creator" class="Mypic img-fluid" src="Images/mypic.jpg"></div>
 			<div class="col-md-5 col-sm-12 col-xs-12" id="data">
 				<p>© JAN 2018 All Rights Reserved</p>
 				<p>This website is the First website designed and developed by :-</p>
-				<p><p>SUBHAM MISHRA<br>COMPUTER SCIENCE & ENGINEERING<br>CET BHUBANESHWAR </p>
+				<p></p>
+				<p>SUBHAM MISHRA<br>
+				COMPUTER SCIENCE & ENGINEERING<br>
+				CET BHUBANESHWAR</p>
 				<p>Email_id :- imsubham882@gmail.com</p>
 			</div>
-
-
 			<div class="col-md-3">
-				<a href="https://www.facebook.com/subham.mishra.397" target="_blank" title=
-				"Connect with me using fb"><img id="fb" onclick="myFunction()" src="Images/fb.jpg" style=
-				""></a><br>
-				<br>
-				<br>
+				<a href="https://www.facebook.com/subham.mishra.397" target="_blank" title="Connect with me using fb">
+					<img id="fb" onclick="myFunction()" src="Images/fb.jpg">
+				</a>
 			</div>
 		</div>
 	</div>
