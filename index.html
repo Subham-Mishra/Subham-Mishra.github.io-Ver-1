@@ -10,13 +10,37 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="HTML%20files/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<script>
-	                 $(window).on('load', function() {
-	                 $(".se-pre-con").fadeOut("slow");
-	                 });
-	                 function myFunction() {
-	                       alert("You need to be logged into your fb account before clicking this button to connect with me!!");
-	                 }
-
+		$(window).on('load', function() {
+			$(".se-pre-con").fadeOut("slow");
+		});
+		function myFunction() {
+			alert("You need to be logged into your fb account before clicking this button to connect with me!!");
+		}
+		$(window).scroll(function() {
+			var height = $(window).scrollTop();
+			if (height > 100) {
+				$('#back2Top').fadeIn();
+			} else {
+				$('#back2Top').fadeOut();
+			}
+		});
+		$(document).ready(function() {
+			$("#back2Top").click(function(event) {
+				event.preventDefault();
+				$("html, body").animate({
+					scrollTop: 0
+				}, "slow");
+				return false;
+			});
+		});
+		$(function() {
+			$('.scroll-down').click(function() {
+				$('html, body').animate({
+					scrollTop: $('div.Template').offset().top
+				}, 'slow');
+				return false;
+			});
+		});
 	</script>
 	<title>MARIANS</title>
 </head>
@@ -26,12 +50,10 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button> <a class="navbar-brand" href="#" style="background-color: darkslategray;color: cyan;">MARIANS</a>
-			</div>
+					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class=
+					"icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#" style=
+					"background-color: darkslategray;color: cyan;">MARIANS</a>
+				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class="active">
@@ -41,38 +63,18 @@
 							<a href="#aboutme">ABOUT ME</a>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY BLOG<span class=
-							"caret"></span></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Page 1-1</a>
-								</li>
-								<li>
-									<a href="#">Page 1-2</a>
-								</li>
-								<li>
-									<a href="#">Page 1-3</a>
-								</li>
-							</ul>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY BLOG</a>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROJECTS<span class=
-							"caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROJECTS<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li>
 									<a href="HTML%20files/Tribute.html" target="_blank">Tribute Page</a>
 								</li>
-								<li>
-									<a href="#">Page 2-2</a>
-								</li>
-								<li>
-									<a href="#">Page 3-3</a>
-								</li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PHOTO GALLERY<span class=
-							"caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PHOTO GALLERY<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li>
 									<a href="HTML%20files/Mypics.html">My Pics</a>
@@ -97,137 +99,144 @@
 				</div>
 			</div>
 		</nav>
+	</div><br>
+	<br>
+	<header>
+		<section class="header-content">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1 class="welcome header-title animate-pop-in">WELCOME, MY DEAR FRIENDS!!!</h1>
+		</section>
+		<section class="header-down-arrow">
+			<img class="scroll-down" src="Images/downarrow.png">
+		</section><br>
+		<br>
+		<br>
+		<br>
+	</header>
+	<div class="Template container-fluid">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p id="Quote"><b>SUCCESS ISN'T ABOUT MONEY,FAME OR GRADES<br>
+		IT'S ABOUT LIVING LIFE THE WAY YOU WANT TO!</b></p><br>
+		<br>
+		<br>
+	</div><br>
+	<br>
+	<br>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		<div class="numbertext">
+			1 / 5
+		</div><img src="Backgrounds/C1.png" style="width:100%"></div>
+		<div class="mySlides fade">
+		<div class="numbertext">
+			2 / 5
+		</div><img src="Backgrounds/C2.jpg" style="width:100%"></div>
+		<div class="mySlides fade">
+		<div class="numbertext">
+			3 / 5
+		</div><img src="Backgrounds/C3.jpg" style="width:100%"></div>
+		<div class="mySlides fade">
+		<div class="numbertext">
+			4 / 5
+		</div><img src="Backgrounds/C4.jpg" style="width:100%"></div>
+		<div class="mySlides fade">
+		<div class="numbertext">
+			5 / 5
+		</div><img src="Backgrounds/C5.jpg" style="width:100%"></div>
+	</div><br>
+	<div style="text-align:center">
+		<span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
 	</div>
-	<div class="container-fluid" style="width: 100%;">
-		<div class="Template">
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<span id="Quote"><b>SUCCESS ISN'T ABOUT MONEY,FAME OR GRADES<br>IT'S ABOUT LIVING LIFE THE WAY YOU WANT TO!</b></span><br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-		<br>
-		<br>
-		<br>
-		<h1 class="welcome">WELCOME, MY DEAR FRIENDS!!!</h1>
-		<br>
-		<br>
-		<br>
-		<div class="slideshow-container">
-			<div class="mySlides fade">
-			<div class="numbertext">
-				1 / 5
-			</div><img src="Backgrounds/C1.png" style="width:100%"></div>
-			<div class="mySlides fade">
-			<div class="numbertext">
-				2 / 5
-			</div><img src="Backgrounds/C2.jpg" style="width:100%"></div>
-			<div class="mySlides fade">
-			<div class="numbertext">
-				3 / 5
-			</div><img src="Backgrounds/C3.jpg" style="width:100%"></div>
-			<div class="mySlides fade">
-			<div class="numbertext">
-				4 / 5
-			</div><img src="Backgrounds/C4.jpg" style="width:100%"></div>
-			<div class="mySlides fade">
-			<div class="numbertext">
-				5 / 5
-			</div><img src="Backgrounds/C5.jpg" style="width:100%"></div>
-		</div><br>
-		<div style="text-align:center">
-			<span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class=
-			"dot"></span> <span class="dot"></span>
-		</div>
-		<script>
-		      var slideIndex = 0;
-		      showSlides();
+	<script>
+	             var slideIndex = 0;
+	             showSlides();
 
-		      function showSlides()
-		      {
-		          var i;
-		          var slides = document.getElementsByClassName("mySlides");
-		          var dots = document.getElementsByClassName("dot");
-		          for (i = 0; i < slides.length; i++) {
-		             slides[i].style.display = "none";
-		          }
-		          slideIndex++;
-		          if (slideIndex > slides.length) {slideIndex = 1}
-		          for (i = 0; i < dots.length; i++) {
-		              dots[i].className = dots[i].className.replace(" active", "");
-		          }
-		          slides[slideIndex-1].style.display = "block";
-		          dots[slideIndex-1].className += " active";
-		          setTimeout(showSlides, 4000);
-		      }
-		</script>
+	             function showSlides()
+	             {
+	                 var i;
+	                 var slides = document.getElementsByClassName("mySlides");
+	                 var dots = document.getElementsByClassName("dot");
+	                 for (i = 0; i < slides.length; i++) {
+	                    slides[i].style.display = "none";
+	                 }
+	                 slideIndex++;
+	                 if (slideIndex > slides.length) {slideIndex = 1}
+	                 for (i = 0; i < dots.length; i++) {
+	                     dots[i].className = dots[i].className.replace(" active", "");
+	                 }
+	                 slides[slideIndex-1].style.display = "block";
+	                 dots[slideIndex-1].className += " active";
+	                 setTimeout(showSlides, 4000);
+	             }
+	</script><br>
+	<br>
+	<br>
+	<br>
+	<div class="Bg">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<div id="aboutme">
 			<br>
 			<div style="text-align: center;">
-				<h1 style="margin-left:2%;font-family:Algerian;"><b>ABOUT ME...</b></h1>
-				<span style="font-size: 8vw;">❝</span>
+				<br>
+				<h1 id="cvheading"><b>ABOUT ME...</b></h1><span id="dquotn">❝</span>
 				<div style="width:80%;margin-left: 10%;text-align: justify;">
-					<p style="font-family: Cursive;font-size:18px;"><i><b>I am a 1st year Btech graduate from College of Engineering
-					and Technology,Bbsr. I belong to CSE background and I am extremely passionate about
-					coding ever since i learned programming. I pursued my +2 from DAV Cspur and my 10th from St.
-					Mary's school. This Website is one of my first major Projects done in the arena Web
-					Development. Since it has been designed while I was just a learner so i hope you will like it.
-					If you faced any problem browsing my website kindly ping me. I am open to any suggestions made
-					for the improvement of this website...THANK YOU!!!</b></i></p>
+					<p id="cv"><i><b>I am a 1st year Btech graduate from College of Engineering and Technology,Bbsr. I belong to CSE background and I am
+					extremely passionate about coding ever since i learned programming. I pursued my +2 from DAV Cspur and my 10th from St. Mary's school.
+					This Website is one of my first major Projects done in the arena Web Development. Since it has been designed while I was just a
+					learner so i hope you will like it. If you faced any problem browsing my website kindly ping me. I am open to any suggestions made for
+					the improvement of this website...THANK YOU!!!</b></i></p>
 				</div>
-				<br>
-				<br>
-
-			</div>
-			    <br>
-				<br>
-				<br>
-				<br>
+			</div><br>
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 		<br>
 		<br>
-		<div class="row" style="background-color:#333;background-attachment: fixed;">
-			<div class="col-md-4"><br>
-			<img alt="Pic of the Creator" class="Mypic img-fluid img-responsive" src="Images/Mypic.jpg"></div>
-			<div class="col-md-5 col-sm-12 col-xs-12" id="data">
-				<p>© JAN 2018 All Rights Reserved</p>
-				<p>This website is the First website designed and developed by :-</p>
-				<p></p>
-				<p>SUBHAM MISHRA<br>
-				COMPUTER SCIENCE & ENGINEERING<br>
-				CET BHUBANESHWAR</p>
-				<p>Email_id :- imsubham882@gmail.com</p>
-			</div>
-			<div class="col-md-3">
-				<a href="https://www.facebook.com/subham.mishra.397" target="_blank" title="Connect with me using fb">
-					<img id="fb" onclick="myFunction()" src="Images/fb.jpg">
-				</a>
-			</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div class="row" style="background-color:#333;background-attachment: fixed;">
+		<div class="col-md-4"><br>
+		<img alt="Pic of the Creator" class="Mypic img-fluid img-responsive" src="Images/Mypic.jpg"></div>
+		<div class="col-md-5 col-sm-12 col-xs-12" id="data">
+			<p>© JAN 2018 All Rights Reserved</p>
+			<p>This website is the First website designed and developed by :-</p>
+			<p></p>
+			<p>SUBHAM MISHRA<br>
+			COMPUTER SCIENCE & ENGINEERING<br>
+			CET BHUBANESHWAR</p>
+			<p>Email_id :- imsubham882@gmail.com</p>
+		</div>
+		<div class="col-md-3">
+			<a href="#" id="back2Top" style="margin-right:4%;margin-bottom: 0.2vw;" title="Back to top">&#10148;</a> <a href=
+			"https://www.facebook.com/subham.mishra.397" target="_blank" title="Connect with me using fb"><img id="fb" onclick="myFunction()" src=
+			"Images/fb.jpg"></a>
 		</div>
 	</div>
 </body>
