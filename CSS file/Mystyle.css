@@ -1,6 +1,33 @@
             html {
             	overflow-x: hidden;
             }
+			.no-js #loader {
+            	display: none;
+            }
+            .js #loader {
+            	display: block;
+            	position: absolute;
+            	left: 100px;
+            	top: 0;
+            }
+            .se-pre-con {
+            	position: fixed;
+            	width: 100%;
+            	height: 100%;
+            	z-index: 9999;
+            	background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
+            	background-color: mediumturquoise;
+            }
+			#aboutme {
+            	background: url("../Backgrounds/MINIM.jpg") no-repeat ;
+            	-webkit-background-size: cover;
+            	-moz-background-size: cover;
+            	-o-background-size: cover;
+            	background-size: cover;
+            	background-attachment: scroll;
+
+            }
+
             .row {
             	display: -ms-flexbox;
             	/* IE10 */
@@ -11,8 +38,6 @@
             	padding: 0 4px;
             	flex-direction: row;
             }
-            /* Create four equal columns that sits next to each other */
-
             .column {
             	-ms-flex: 25%;
             	/* IE10 */
@@ -25,8 +50,6 @@
             	margin-top: 8px;
             	vertical-align: top;
             }
-            /* Responsive layout - makes a two column-layout instead of four columns */
-
             @media screen and (max-width: 800px) {
             	.column {
             		-ms-flex: 50%;
@@ -34,8 +57,6 @@
             		max-width: 50%;
             	}
             }
-            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
             @media screen and (max-width: 600px) {
             	.column {
             		-ms-flex: 100%;
@@ -51,9 +72,7 @@
             	position: relative;
             	margin: auto;
             }
-            /* Caption text */
-
-            .text {
+			 .text {
             	color: #f2f2f2;
             	font-size: 15px;
             	padding: 8px 12px;
@@ -62,8 +81,6 @@
             	width: 100%;
             	text-align: center;
             }
-            /* Number text (1/3 etc) */
-
             .numbertext {
             	color: #f2f2f2;
             	font-size: 12px;
@@ -71,8 +88,6 @@
             	position: absolute;
             	top: 0;
             }
-            /* The dots/bullets/indicators */
-
             .dot {
             	height: 15px;
             	width: 15px;
@@ -85,8 +100,6 @@
             .active {
             	background-color: #717171;
             }
-            /* Fading animation */
-
             .fade {
             	-webkit-animation: fade;
             	-webkit-animation-duration: 4s;
@@ -109,81 +122,108 @@
             		opacity: 1
             	}
             }
-            /* On smaller screens, decrease text size */
-
             @media only screen and (max-width: 300px) {
             	.text {
-            		font-size: 11px
+            		font-size: 11px;
             	}
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 650px) {
             	.Template {
-            		background-image: none;
-            		background: #006666;
+            		background-image: url("../Backgrounds/C6.png");
+					background-repeat:no-repeat;
+					background-size:cover;
+					background-position:center;
             		text-align: center;
-            	}
+					height:auto;
+					-webkit-background-size:cover;
+					-moz-background-size:cover;
+					-o-background-size:cover;
+				}
+				#Quote {
+					font-size: 10vw;
+					font-family: Algerian, serif;
+					color: #05eaba;
+				}
+				.welcome{
+					border: 3px solid #05ffa0;
+					border-radius:20px;
+					background: #d9405d;
+					padding:20px;
+					text-align: center;
+					margin-left:10%;
+					width:80%;
+					font-size: medium;
+					color:white;
+				}
+				.Mypic {
+					height: 80%;
+					width: 80%;
+					padding: 5%;
+					margin-left: 8vw;
+					margin-bottom: 3%;
+           		 }
+				#fb {
+					height: 40px;
+					width: 40px;
+					margin-right: 1vw;
+					margin-top: 10vw;
+					margin-bottom: 3vw;
+				}
+				#data {
+					background-color: #333;
+					color: floralwhite;
+					font-size: 5vw;
+					font-family: monospace;
+					margin-top: 4vw;
+					text-align: center;
+				}
+
             }
-            @media only screen and (min-width: 601px) {
+            @media only screen and (min-width: 650px) {
             	.Template {
             		background-size: 100%;
-            		background-image: url("../Backgrounds/BG9.jpg");
+            		background-image: url("../Backgrounds/BG9.jpg") ;
             		max-width: fit-content;
             		height: fit-content;
             		background-attachment: fixed;
             		text-align: center;
             	}
-            }
-            #aboutme {
-            	background: url("../Backgrounds/MINIM.jpg") no-repeat center center fixed;
-            	-webkit-background-size: cover;
-            	-moz-background-size: cover;
-            	-o-background-size: cover;
-            	background-size: cover;
-            	background-attachment: scroll;
-            	text-align: center;
-            }
-            .Mypic {
-            	height: 80%;
-            	width: 80%;
-            	padding: 5%;
-            	margin-left: 2vw;
-                margin-bottom: 3%;
-            }
-            #data {
-            	background-color: #333;
-            	color: floralwhite;
-            	font-family: monospace;
-            	margin-top: 4vw;
-            	text-align: center;
-            }
-            #fb {
-            	height: 40px;
-            	width: 40px;
-            	float: right;
-            	margin-right: 1vw;
-            	margin-top: 15vw;
-            	margin-bottom: 3vw;
-            }
-            .no-js #loader {
-            	display: none;
-            }
-            .js #loader {
-            	display: block;
-            	position: absolute;
-            	left: 100px;
-            	top: 0;
-            }
-            .se-pre-con {
-            	position: fixed;
-            	width: 100%;
-            	height: 100%;
-            	z-index: 9999;
-            	background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
-            	background-color: mediumturquoise;
-            }
-            #Quote {
-            	font-size: 5vw;
-            	font-family: Tertre, serif;
-            	color: floralwhite;
-            	text-align: center;
+				#Quote {
+            		font-size: 5vw;
+            		font-family: Tertre, serif;
+            		color: floralwhite;
+            		text-align: center;
+                }
+				.welcome{
+					border: 3px solid #eeff76;
+					border-radius:20px;
+					background: #d9405d;
+					text-align:center;
+					padding:20px;
+					margin-left:10%;
+					width:80%;
+					color:white;
+				}
+				.Mypic {
+					height: 80%;
+					width: 80%;
+					padding: 5%;
+					margin-left: 2vw;
+					margin-bottom: 3%;
+           		 }
+				#fb {
+					height: 40px;
+					width: 40px;
+					float: right;
+					margin-right: 1vw;
+					margin-top: 15vw;
+					margin-bottom: 3vw;
+				}
+				#data {
+					background-color: #333;
+					color: floralwhite;
+					font-family: monospace;
+					margin-top: 4vw;
+					text-align: center;
+				}
             }
