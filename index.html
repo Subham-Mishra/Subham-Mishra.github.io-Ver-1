@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<link href="CSS%20file/Mystyle.css" rel="stylesheet" type="text/css">
@@ -8,106 +9,48 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="HTML%20files/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<script>
-	       $(window).on('load', function() {
-	           $(".se-pre-con").fadeOut("slow");
-	       });
-	       function myFunction() {
-	           alert("You need to be logged into your fb account before clicking this button to connect with me!!");
-	       }
-	       $(window).scroll(function() {
-	           var height = $(window).scrollTop();
-	           if (height > 100) {
-	               $('#back2Top').fadeIn();
-	           } else {
-	               $('#back2Top').fadeOut();
-	           }
-	       });
-	       $(document).ready(function() {
-	           $("#back2Top").click(function(event) {
-	               event.preventDefault();
-	               $("html, body").animate({
-	                   scrollTop: 0
-	               }, "slow");
-	               return false;
-	           });
-	       });
-	       $(function() {
-	           $('.scroll-dn').click(function() {
-	               $('html, body').animate({
-	                   scrollTop: $('div.Template').offset().top
-	               }, 'slow');
-	               return false;
-	           });
-	       });
-	       $(function() {
-	           $('.scroll-down').click(function() {
-	               $('html, body').animate({
-	                   scrollTop: $('div.Bg').offset().top
-	               }, 'slow');
-	               return false;
-	           });
-	       });
-	</script>
 	<title>MARIANS</title>
 </head>
-<body style=" background-color: #990033;font-family: Verdana, sans-serif;">
+
+<body style=" background-color: #990033;font-family: Verdana, sans-serif;" data-spy="scroll" data-target=".navbar" data-offset="50">
 	<div class="se-pre-con"></div>
 	<div>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
+		<nav class="navbar navbar-inverse navbar-fixed-top data-spy=" affix " data-offset-top="197 ">
+			<div class="container-fluid ">
+				<div class="navbar-header ">
 					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class=
-					"icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#" style=
-					"background-color: darkslategray;color: cyan;">MARIANS</a>
+					"icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="# " style=
+					"background-color: darkslategray;color: cyan; ">MARIANS</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav navbar-right">
 						<li class="active">
 							<a href="index.html">HOME</a>
 						</li>
-						<li>
-							<a class="scroll-down" href="#aboutme">ABOUT ME</a>
-						</li>
 						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY BLOG</a>
-						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROJECTS<span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown">MY PROJECTS<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="HTML%20files/Tribute.html" target="_blank">Tribute Page</a>
+									<a href="HTML%20files/Tribute.html" target="_blank">TRIBUTE PAGE</a>
 								</li>
+								<li>
+								<a  href="HTML%20files/Photo_Gallery.html">PHOTO GALLERY</a>
+							    </li>
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PHOTO GALLERY<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="HTML%20files/Mypics.html">My Pics</a>
-								</li>
-								<li>
-									<a href="HTML%20files/familypics.html">Family Pics</a>
-								</li>
-								<li>
-									<a href="HTML%20files/School.html">St. Mary's</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
-						</li>
-						<li>
-							<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div><br>
+							<a class="scroll-down " href="#abtme">ABOUT ME</a>
+			</li>
+			<li>	<a class="scroll-dw" href="#footer">CONTACT ME</a>
+			</li>
+			</ul>
+	</div>
+	</div>
+	</nav>
+	</div>
+	<br>
 	<br>
 	<header>
 		<section class="header-content">
@@ -122,7 +65,8 @@
 		</section>
 		<section class="header-down-arrow">
 			<img class="scroll-dn" src="Images/downarrow.png">
-		</section><br>
+		</section>
+		<br>
 		<br>
 		<br>
 		<br>
@@ -134,63 +78,47 @@
 		<br>
 		<br>
 		<p id="Quote"><b>SUCCESS ISN'T ABOUT MONEY,FAME OR GRADES<br>
-		IT'S ABOUT LIVING LIFE THE WAY YOU WANT TO!</b></p><br>
+		IT'S ABOUT LIVING LIFE THE WAY YOU WANT TO!</b>
+		</p>
 		<br>
 		<br>
-	</div><br>
+		<br>
+	</div>
+	<br>
 	<br>
 	<br>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
-		<div class="numbertext">
-			1 / 5
-		</div><img src="Backgrounds/C1.png" style="width:100%"></div>
+			<div class="numbertext">1 / 5</div>
+			<img src="Backgrounds/C1.png" style="width:100%">
+		</div>
 		<div class="mySlides fade">
-		<div class="numbertext">
-			2 / 5
-		</div><img src="Backgrounds/C2.jpg" style="width:100%"></div>
+			<div class="numbertext">2 / 5</div>
+			<img src="Backgrounds/C2.jpg" style="width:100%">
+		</div>
 		<div class="mySlides fade">
-		<div class="numbertext">
-			3 / 5
-		</div><img src="Backgrounds/C3.jpg" style="width:100%"></div>
+			<div class="numbertext">3 / 5</div>
+			<img src="Backgrounds/C3.jpg" style="width:100%">
+		</div>
 		<div class="mySlides fade">
-		<div class="numbertext">
-			4 / 5
-		</div><img src="Backgrounds/C4.jpg" style="width:100%"></div>
+			<div class="numbertext">4 / 5</div>
+			<img src="Backgrounds/C4.jpg" style="width:100%">
+		</div>
 		<div class="mySlides fade">
-		<div class="numbertext">
-			5 / 5
-		</div><img src="Backgrounds/C5.jpg" style="width:100%"></div>
-	</div><br>
-	<div style="text-align:center">
-		<span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+			<div class="numbertext">5 / 5</div>
+			<img src="Backgrounds/C5.jpg" style="width:100%">
+		</div>
+	</div>
+	<br>
+	<div style="text-align:center">	<span class="dot"></span>  <span class="dot"></span>  <span class="dot"></span>  <span class="dot"></span>  <span class="dot"></span>
 	</div>
 	<script>
-	                var slideIndex = 0;
-	                showSlides();
-
-	                function showSlides()
-	                {
-	                    var i;
-	                    var slides = document.getElementsByClassName("mySlides");
-	                    var dots = document.getElementsByClassName("dot");
-	                    for (i = 0; i < slides.length; i++) {
-	                       slides[i].style.display = "none";
-	                    }
-	                    slideIndex++;
-	                    if (slideIndex > slides.length) {slideIndex = 1}
-	                    for (i = 0; i < dots.length; i++) {
-	                        dots[i].className = dots[i].className.replace(" active", "");
-	                    }
-	                    slides[slideIndex-1].style.display = "block";
-	                    dots[slideIndex-1].className += " active";
-	                    setTimeout(showSlides, 4000);
-	                }
-	</script><br>
+	</script>
 	<br>
 	<br>
 	<br>
-	<div class="Bg">
+	<br>
+	<div class="Bg" id="abtme">
 		<br>
 		<br>
 		<br>
@@ -210,14 +138,17 @@
 					extremely passionate about coding ever since i learned programming. I pursued my +2 from DAV Cspur and my 10th from St. Mary's school.
 					This Website is one of my first major Projects done in the arena Web Development. Since it has been designed while I was just a
 					learner so i hope you will like it. If you faced any problem browsing my website kindly ping me. I am open to any suggestions made for
-					the improvement of this website...THANK YOU!!!</b></i></p>
+					the improvement of this website...Also if you want a personalised website for yourself or your community feel free to contact me...I would be more than happy to design and develop it for uTHANK YOU!!!</b></i>
+					</p>
 				</div>
-			</div><br>
+			</div>
 			<br>
 			<br>
 			<br>
 			<br>
-		</div><br>
+			<br>
+		</div>
+		<br>
 		<br>
 		<br>
 		<br>
@@ -228,23 +159,31 @@
 		<br>
 		<br>
 	</div>
-	<div class="row" style="background-color:#333;background-attachment: fixed;">
-		<div class="col-md-4"><br>
-		<img alt="Pic of the Creator" class="Mypic img-fluid img-responsive" src="Images/Mypic.jpg"></div>
+	<div class="row" id="footer" style="background-color:#333;background-attachment: fixed;">
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<img alt="Pic of the Creator" class="Mypic img-fluid img-responsive" src="Images/Mypic.jpg">
+		</div>
 		<div class="col-md-5 col-sm-12 col-xs-12" id="data">
 			<p>© JAN 2018 All Rights Reserved</p>
 			<p>This website is the First website designed and developed by :-</p>
 			<p></p>
-			<p>SUBHAM MISHRA<br>
-			COMPUTER SCIENCE & ENGINEERING<br>
-			CET BHUBANESHWAR</p>
+			<p>SUBHAM MISHRA
+				<br>COMPUTER SCIENCE & ENGINEERING
+				<br>CET BHUBANESHWAR</p>
 			<p>Email_id :- imsubham882@gmail.com</p>
+			<p>Phone No.:-8018821596</p>
+			<a href="https://www.facebook.com/subham.mishra.397" target="_blank" title="Connect with me using fb">	<i class="fa fa-facebook-square" onclick="myFunction()" style="font-size:36px"></i>
+			</a>
+			<a href="https://github.com/Subham-Mishra" target="_blank" title="Connect with me using github">	<i class="fa fa-github-square" style="font-size:36px"></i>
+			</a>
+			<a href="https://www.instagram.com/subham.mishra243/" target="_blank" title="Follow me on Instagram">	<i class="fa fa-instagram" style="font-size:36px"></i>
+			</a>
 		</div>
-		<div class="col-md-3">
-			<a href="#" id="back2Top" style="margin-right:4%;margin-bottom: 0.2vw;" title="Back to top">&#10148;</a> <a href=
-			"https://www.facebook.com/subham.mishra.397" target="_blank" title="Connect with me using fb"><img id="fb" onclick="myFunction()" src=
-			"Images/fb.jpg"></a>
+		<div class="col-md-3 col-sm-12 col-xs-12">	<a id="back2Top" style="margin-right:4%;margin-bottom: 0.2vw;" title="Back to top">&#10148;</a>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5550.535913263214!2d85.77359628962948!3d20.274343307600713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f9d486f7c3%3A0xde71ead59307dcca!2sCollege+of+Engineering+and+Technology!5e0!3m2!1sen!2sin!4v1532181374452" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</div>
+	<script src="JAVASCRIPT%20files/indexjs.js"></script>
 </body>
+
 </html>
