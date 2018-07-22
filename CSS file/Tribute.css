@@ -1,63 +1,56 @@
 html {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
-
 img {
-  border-radius: 10%;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  border: 3px violet solid;
+	border-radius: 10%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	border: 3px violet solid;
 }
-
 .se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
-  background-color: mediumturquoise;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../HTML files/Preloader_3.gif") center no-repeat #fff;
+	background-color: mediumturquoise;
 }
-
 i {
-  color: floralwhite;
-  text-align: center;
+	color: floralwhite;
+	text-align: center;
 }
-
 @media screen and (max-width: 650px) {
-  .Mypic {
-    height: 80%;
-    width: 80%;
-    padding: 5%;
-    margin-left: 8vw;
-    margin-bottom: 3%;
-  }
-
-  #data {
-    background-color: #333;
-    color: floralwhite;
-    font-size: 5vw;
-    font-family: monospace;
-    margin-top: 4vw;
-    text-align: center;
-  }
+	.Mypic {
+		height: 80%;
+		width: 80%;
+		padding: 5%;
+		margin-left: 8vw;
+		margin-bottom: 3%;
+	}
+	#data {
+		background-color: #333;
+		color: floralwhite;
+		font-size: 5vw;
+		font-family: monospace;
+		margin-top: 4vw;
+		text-align: center;
+	}
 }
-
 @media only screen and (min-width: 650px) {
-  .Mypic {
-    height: 80%;
-    width: 80%;
-    padding: 5%;
-    margin-left: 2vw;
-    margin-bottom: 3%;
-  }
-
-  #data {
-    background-color: #333;
-    color: floralwhite;
-    font-family: monospace;
-    margin-top: 4vw;
-    text-align: center;
-  }
+	.Mypic {
+		height: 80%;
+		width: 80%;
+		padding: 5%;
+		margin-left: 2vw;
+		margin-bottom: 3%;
+	}
+	#data {
+		background-color: #333;
+		color: floralwhite;
+		font-family: monospace;
+		margin-top: 4vw;
+		text-align: center;
+	}
 }
