@@ -1,6 +1,10 @@
 html {
 	overflow-x: hidden;
 }
+.hideme
+{
+    opacity:0.2;
+}
 #back2Top {
 	width: 40px;
 	line-height: 40px;
@@ -29,10 +33,6 @@ html {
 .no-js #loader {
 	display: none;
 }
-i {
-	color: floralwhite;
-	text-align: center;
-}
 .js #loader {
 	display: block;
 	position: absolute;
@@ -45,7 +45,6 @@ i {
 	height: 100%;
 	z-index: 9999;
 	background: url("../HTML files/Preloader_3.gif") center no-repeat #48d1cc;
-	background-color: #48d1cc;
 }
 .row {
 	display: -ms-flexbox;
@@ -82,6 +81,7 @@ i {
 }
 .mySlides {
 	display: none;
+	height: 100%;
 }
 .slideshow-container {
 	max-width: 1000px;
@@ -506,4 +506,11 @@ body .Gallery {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
+}
+a i{
+	color: #aaa6a0;
+	text-align: center;
+}
+a i:hover{
+	color: #fffcec;
 }
