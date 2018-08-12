@@ -46,39 +46,6 @@ html {
 	z-index: 9999;
 	background: url("../HTML files/Preloader_3.gif") center no-repeat #48d1cc;
 }
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	flex-direction: row;
-}
-.column {
-	-ms-flex: 25%;
-	flex: 25%;
-	max-width: 25%;
-	padding: 0 4px;
-	flex-direction: column;
-}
-.column img {
-	margin-top: 8px;
-	vertical-align: top;
-}
-@media screen and (max-width: 800px) {
-	.column {
-		-ms-flex: 50%;
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-@media screen and (max-width: 600px) {
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	}
-}
 .mySlides {
 	display: none;
 	height: 100%;
@@ -484,28 +451,9 @@ header:after {
 		transform: none;
 	}
 }
-body .Gallery {
-	background-color: #339966;
-}
-.Gallery img {
-	padding: 2%;
-	border-radius: 20px;
-	height: auto;
-	width: 100%;
-}
-* {
-	box-sizing: border-box;
-}
-.zoom {
-	transition: transform .2s;
-	width: 200px;
+bx;
 	height: 200px;
 	margin: 0 auto;
-}
-.zoom:hover {
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
 }
 a i{
 	color: #aaa6a0;
