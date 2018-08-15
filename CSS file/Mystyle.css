@@ -91,7 +91,7 @@ html {
         margin-top: 20%;
     }
     .Bg {
-        background: url("../Backgrounds/A3.jpg");
+        background-color: #3e5ec5;
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -112,7 +112,7 @@ html {
         top: 0;
     }
     #aboutme {
-        background: url("../Backgrounds/M1.jpg") no-repeat;
+        background-color: #2d3744;
         text-align: justify;
         background-size: cover;
         margin-left: 12%;
