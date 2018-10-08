@@ -79,6 +79,15 @@ $(function() {
     });
 });
 
+$(function() {
+    $(".scroll-6").click(function() {
+        $("html, body").animate({
+            scrollTop: $("div#projects").offset().top
+        }, "slow");
+        return false;
+    });
+});
+
 AOS.init({
     duration: 1200
 });
