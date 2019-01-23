@@ -91,3 +91,34 @@ $(function() {
 AOS.init({
     duration: 1200
 });
+
+$(function(){
+    $(".typed").typed({
+    strings: ["am a 2nd year Btech graduate from College of Engineering and Technology,Bbsr.",
+        " belong to CSE background.",
+        "am extremely passionate about coding ever since i learned programming.",
+        "pursued my +2 from Super 40 Batch,DAV Cspur securing 91.8% and my matriculation from St. Mary's school,Jajpur securing 96.8% .",
+    ],
+        stringsElement: null,
+        // typing speed
+        typeSpeed: 30,
+        // time before typing starts
+        startDelay: 1200,
+        // backspacing speed
+        backSpeed: 20,
+        // time before backspacing
+        backDelay: 500,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: 5,
+        // show cursor
+        showCursor: false,
+        // character for cursor
+        cursorChar: "|",
+        // attribute to type (null == text)
+        attr: null,
+        // either html or text
+        contentType: 'html',
+});
+});
