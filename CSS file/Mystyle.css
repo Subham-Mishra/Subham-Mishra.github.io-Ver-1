@@ -189,9 +189,9 @@ html {
         background-color: rgb(11, 247, 255);
     }
     .radial {
-        text-align:center;
+        margin-left:22% ;
+        width: 80%;
     }
-    
 }
 
 @media only screen and (min-width: 650px) {
@@ -296,10 +296,9 @@ html {
         background-color: rgb(130, 243, 247);
     }
     .radial {
-        margin:28px;
-        text-align:center;
+        margin: 2%;
+        width: 100%;
     }
-    
 }
 
 header {
