@@ -73,7 +73,7 @@ $(function() {
 $(function() {
     $(".scroll-5").click(function() {
         $("html, body").animate({
-            scrollTop: $("div.Template").offset().top
+            scrollTop: $("div.projects").offset().top
         }, "slow");
         return false;
     });
@@ -122,3 +122,4 @@ $(function(){
         contentType: 'html',
 });
 });
+
