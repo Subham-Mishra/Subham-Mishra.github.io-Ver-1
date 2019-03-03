@@ -41,6 +41,9 @@
         </div>
     </nav>
 </div>
+
+
+
 <div id="top">
     <header>
         <section class="header-content">
@@ -58,7 +61,8 @@
         <br>
     </header>
 </div>
-<div class="projects" id="projects" style="background-color: #580c6b !important;">
+
+<div class="projects" id="projects"  - style="background-color: #580c6b !important;">
     <br>
     <br>
     <br>
@@ -188,7 +192,10 @@
     <br>
     <br>
 </div>
-<div class="container-fluid success skills" id="skill" style="background-color: #000000">
+
+
+<div id="particles-js"></div>
+<div class="overlay-skill" style="position:relative;">    
     <br>
     <br>
     <h1 style="color:yellow;text-align:center;text-decoration:underline;font-weight:bolder;">TECHNICAL SKILLS</h1>
@@ -215,7 +222,12 @@
     <br>
     <br>
 </div>
-<div style="background-color: #98164e !important;">
+
+<div class="count-particles">
+    <span class="js-count-particles"></span>
+</div>
+
+<div style="background-color: #98164e !important;position: relative;">
     <div class="container" id="certificates">
         <br>
         <br>
@@ -298,7 +310,7 @@
     <br>
     <br>
 </div>
-<div class="Bg" id="abtme">
+<div class="Bg" id="abtme" style="position: relative;">
     <br>
     <br>
     <br>
@@ -334,7 +346,7 @@
     <br>
     <br>
 </div>
-<div style="background-color: #418f71;" id="contact">
+<div style="background-color: #418f71;position: relative;" id="contact">
     <div class="container">
         <h1 class="text-center" style="color: floralwhite;padding-top:3%;">MAIL ME YOUR MESSAGE...</h1>
         <form accept-charset="UTF-8" action="https://usebasin.com/f/87d00e0e6d4e" method="POST" style="width: 50%;" data-aos="zoom-in">
@@ -354,7 +366,7 @@
         </form>
     </div>
 </div>
-<div class="row" id="footer" style="background:#333 fixed;">
+<div class="row" id="footer" style="background:#333 fixed;position: relative;">
     <div class="col-md-4 col-sm-12 col-xs-12">
         <img alt="Pic of the Creator" data-aos="fade-right" class="Mypic img-responsive" src="./Images/mypic4.jpg">
     </div>
@@ -383,7 +395,32 @@
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
 <script src="JAVASCRIPT%20file/script.js"></script>
 <script src="JAVASCRIPT%20file/pbar.js"></script>
+<script src="JAVASCRIPT file\particles.js"></script>
+<script src="JAVASCRIPT%20file/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+
+<!-- stats.js -->
+<script src="JAVASCRIPT file\stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
 </body>
 
 </html>
